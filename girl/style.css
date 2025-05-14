@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.timerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 45vw;
+}
+label{
+    font-size: 70px;
+    color: #b392f2;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 300;
+    
+}
+
+input{
+    background: transparent;
+    display: flex;
+    color: white;
+    border: 2px solid #b392f2;
+    border-radius: 10%;
+    height: 40px;
+    width: 200px;
+}
+.btn{
+    margin-top: 3%;
+    height: 30px;
+    width: 80px;
+    background: black;
+    color: pink;
+    border: 2px solid #b392f2 ;
+}

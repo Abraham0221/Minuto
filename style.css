@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#centerContainer{
+    text-align: center;
+}
+span{
+    display: block;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Oi", serif;
+    font-weight: 400;
+    
+}
+#firstButtons{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+button{
+    height: 70px;
+    width:120px;
+    border-radius: 17%;
+    cursor: pointer;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+button:first-child{
+    background-color: #55b1ef;
+}
+button:last-child{
+    background-color: pink;
+}
