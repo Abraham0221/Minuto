@@ -40,7 +40,9 @@ label{
     font-weight: 300;
     
 }
-
+input::placeholder{
+    color: white; 
+}
 input{
     background: transparent;
     display: flex;

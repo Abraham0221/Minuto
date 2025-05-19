@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Parse input time (accepts formats like "01:30:00" or "90:00" or "5400")
     function parseTimeInput(input) {
         // Check if input is just a number (assuming seconds)
-        if (/^\d+$/.test(input.trim())) {
+        if (/^\d+$/.test(input.trim())) {//\d means a digit (0–9), + means one or more digits
             return parseInt(input.trim());
         }
         
@@ -71,11 +71,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to deactivate countdown mode UI
     function deactivateCountdownMode() {
         // Remove overlay
-        overlay.style.backgroundColor = 'transparent';
+        overlay.style.backgroundColor = '';
+        overlay.style.position = '';
+        overlay.style.top = '';
+        overlay.style.left = '';
+        overlay.style.width = '';
+        overlay.style.height = '';
+        overlay.style.zIndex = '';
         
         // Show the input container again
-        timerContainer.style.opacity = '1';
-        timerContainer.style.pointerEvents = 'auto'; // Re-enable input interaction
+        timerContainer.style.opacity = '';
+        timerContainer.style.pointerEvents = '';
+        timerContainer.styel.transition = ''; // Re-enable input interaction
         
         // Reset timer display
         timerDisplay.style.position = '';
@@ -84,9 +91,11 @@ document.addEventListener('DOMContentLoaded', function() {
         timerDisplay.style.transform = '';
         timerDisplay.style.fontSize = '';
         timerDisplay.style.color = '';
-        timerDisplay.style.textShadow = '';
+        timerDisplay.style.fontFamily = '';
+        timerDisplay.style.fontWeight = '';
+        timerDisplay.style.textAlign = '';
         timerDisplay.style.zIndex = '';
-        timerDisplay.textContent = '';
+        timerDisplay.style.textShadow = '';
         
         // Clear the input field for a new entry
         timerInput.value = '';
