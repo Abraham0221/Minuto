@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     // Reset the timer display after a short delay
                     timerDisplay.textContent = '';
+                    alert('Time is up! Click OK to reset')
                     deactivateCountdownMode();
                 }, 1000);
             }
